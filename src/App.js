@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <p className='text-red-600 text-lg'> {counters} Done</p>
       <Button  text={`click button`} className="hover:text-red-500"  onClick={()=>{setCounters(counters+1)}} disabled={true} isLoading={true} />
-    </div>
-  );
+      </div>
+      )
 }
 
 export default App;
