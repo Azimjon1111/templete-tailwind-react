@@ -8,6 +8,7 @@ function App() {
   const [counters, setCounters] = useState(1);
   return (
     <div className="App flex justify-around">
+      <h1 className="text-red-500">Hielle</h1>
       {/* <Card
         variant="img"
         url="https://realfood.tesco.com/media/images/1400x919-MargaritaPizza-555a4065-2573-4b41-bcf3-7193cd095d8f-0-1400x919.jpg"
