@@ -10,7 +10,7 @@ const Accordion = ({ data }) => {
     setSelected(i);
   };
   return (
-    <div className="flex h-screen w-screen justify-center items-center  text-red-700">
+    <div className="flex h-screen w-[1000px] justify-center items-center  text-red-700">
       <div className="accordion  text-red-700 " style={{ backgrounColor: "#f0ebe1" }}>
         {data.map((item, i) => (
           <div className="item">

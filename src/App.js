@@ -9,15 +9,16 @@ function App() {
   return (
     <div className="App flex justify-around">
       <h1 className="text-red-500">Hielle</h1>
-      {/* <Card
+
+      <Card
         variant="img"
         url="https://realfood.tesco.com/media/images/1400x919-MargaritaPizza-555a4065-2573-4b41-bcf3-7193cd095d8f-0-1400x919.jpg"
         alt="Image is ..."
         title="Tesco Real Food"
         body="Итальянский алый соус, цыпленок барбекю, говядина барбекю, индейка и дольки пепперони. Сыр моцарелла и сыр гауда."
         btn="true"
-        btnText="Button Text"
-        width="w-1/5"
+        btnText="Button eee"
+        width="w-2/5"
         classBtn="rounded text-white bg-sky-500 px-3 py-1 w-full my-4"
         cardClass="w-1/5 border-2 rounded-xl"
         classBody="px-4"
@@ -53,8 +54,9 @@ function App() {
         classBody="px-4"
         classTitle="m-2 ml-0"
         classImg="rounded"
-      /> */}
-      <Accordion data={FakeData} />
+      />
+      {/* <Accordion data={FakeData} /> */}
+      <Button text="Onclick" disabled={true} className="text-red-500 bg-slate-500" />
     </div>
   );
 }
