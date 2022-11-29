@@ -18,15 +18,12 @@ const style = {
   borderRadius: "10px",
 };
 
-export default function BasicModal({ title, text }) {
-  const { handleClose, handleOpen, open, setOpen } =
-    React.useContext(MyContext);
-
+export default function BasicModal({ title, text, open, onClose }) {
   return (
     <div>
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={onClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
