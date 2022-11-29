@@ -1,14 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
-@font-face {
-  font-family: "CustomFont";
-  src: url("./Demo_Fonts/Fontspring-DEMO-quiroh-regular.otf");
-}
-body {
-  font-family: "CustomFont";
-}
 
 .loader {
   border: 3px solid #f3f3f3;

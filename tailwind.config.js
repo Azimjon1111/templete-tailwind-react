@@ -46,7 +46,7 @@
 //       xs: "20rem",
 //       sm: "24rem",
 //       md: "28rem",
-//       lg: "32rem", 
+//       lg: "32rem",
 //       xl: "36rem",
 //       full: "100%",
 //     },
@@ -71,7 +71,7 @@
 //       calibri: ["Calibri"],
 //     },
 //     // backgroundImage: (theme) => ({
-//     //   "landing": "url('/images/c1.png')",     
+//     //   "landing": "url('/images/c1.png')",
 //     // }),
 //   },
 //   variants: {
@@ -79,9 +79,13 @@
 //   },
 // };
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        manrope: ["Manrope"],
+      },
+    },
   },
   plugins: [],
-}
+};

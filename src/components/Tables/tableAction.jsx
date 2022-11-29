@@ -80,7 +80,7 @@ const TableAction = ({ thead__count, tbody__count }) => {
   ];
   return (
     <>
-      <table className="w-[90%] mx-auto shadow-lg bg-white rounded-xl">
+      <table className="w-[90%] mx-auto shadow-lg bg-white rounded-xl body-font font-manrope">
         <tr>
           {head?.map((e, i) => (
             <th class="bg-blue-100 border text-left px-8 py-4">{e}</th>
