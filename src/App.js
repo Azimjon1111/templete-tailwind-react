@@ -6,10 +6,13 @@ import TableAction from "./components/Tables/tableAction";
 import BasicModal from "./components/Modal/Modal";
 import { useContext } from "react";
 import { MyContext } from "./Context/Contexts";
-import react, {useState, useEffect} from 'react'
+import react, { useState, useEffect } from "react";
+import { Pencil } from "./utils/icons";
+import Input from "./components/Input/Input";
+
 function App() {
   const { handleOpen } = useContext(MyContext);
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <CustomTable />
@@ -17,9 +20,13 @@ function App() {
       <Button
         disabled={false}
         text="I am button"
-        onClick={()=>{setIsModalOpen(true)}}
+        onClick={() => {
+          setIsModalOpen(true);
+        }}
         isLoading={false}
+        icon={Pencil}
       />
+      <Input type="text" className="border-r-2 border-black" />
       <Accordion data={FakeData} />
       <BasicModal
         open={isModalOpen}
