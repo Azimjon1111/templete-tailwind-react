@@ -26,7 +26,7 @@ function App() {
       <Accordion data={FakeData} />
       <BasicModal
         title="I am a modal"
-        text="This my text. It is cool thet it has worked"
+        text="This my text. It is cool thet it has worke"
       />
     </>
   );
