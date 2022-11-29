@@ -46,7 +46,7 @@
 //       xs: "20rem",
 //       sm: "24rem",
 //       md: "28rem",
-//       lg: "32rem", 
+//       lg: "32rem",
 //       xl: "36rem",
 //       full: "100%",
 //     },
@@ -71,7 +71,7 @@
 //       calibri: ["Calibri"],
 //     },
 //     // backgroundImage: (theme) => ({
-//     //   "landing": "url('/images/c1.png')",     
+//     //   "landing": "url('/images/c1.png')",
 //     // }),
 //   },
 //   variants: {
@@ -79,9 +79,30 @@
 //   },
 // };
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        white: "#ffffff",
+        purple: "#3f3cbb",
+        midnight: "#121063",
+        metal: "#565584",
+        tahiti: "#3ab7bf",
+        silver: "#ecebff",
+        bermuda: "#78dcca",
+        titleColor: "#85662b",
+        itemColor: "#f0ebe1",
+        contentColor: "#8b7f75",
+        disabledBtnBg: "#e7e7e7",
+        disabledBtnColor: "#8d919e",
+      },
+      transitionTimingFunction: {
+        "in-expo": "cubic-bezier(1,0,1,0)",
+        "out-expo": "cubic-bezier(0, 1, 0, 1)",
+      },
+    },
   },
   plugins: [],
-}
+};

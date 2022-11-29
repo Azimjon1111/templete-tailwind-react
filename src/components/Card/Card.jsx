@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../button/button";
 
 const Card = ({
@@ -16,12 +16,19 @@ const Card = ({
   classTitle,
   classImg,
 }) => {
+  const [hov, setHov] = useState(false);
+  function handleHover() {
+    setHov(true);
+  }
   return (
     <>
       {/*Image, Button*/}
 
       {variant == "img" && btn && (
-        <div className={`card ${cardClass} ${border}`}>
+        <div
+          className={`card ${cardClass} ${border}`}
+          onMouseDown={handleHover}
+        >
           <div className="card-top">
             <img className={`${classImg}`} src={url} alt={alt} />
           </div>
@@ -30,7 +37,10 @@ const Card = ({
             <div className="card-body">{body}</div>
             <Button
               text="Buy Pizza"
-              className="bg-sky-500 text-white rounded w-full my-4 hover:bg-violet-600"
+              className={
+                `bg-sky-500 text-white rounded w-full my-4` + hov &&
+                `hover:bg-violet-600`
+              }
             />
           </div>
         </div>
