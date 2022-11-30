@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 
 .loader {
   border: 3px solid #f3f3f3;
@@ -20,4 +19,8 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.MuiTelInput-TextField {
+  border-radius: 20px;
 }
