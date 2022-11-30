@@ -11,11 +11,11 @@ const Button = ({
       <button
         className={
           disabled
-            ? `flex cursor-not-allowed rounded-3xl px-6 py-2 transition text-disabledBtnColor bg-disabledBtnBg ${className}`
+            ? `flex cursor-not-allowed rounded-3xl px-6 py-2 border-[1px] text-slate-600 border-slate-400 transition text-disabledBtnColor bg-disabledBtnBg ${className}`
             : `flex rounded-3xl border-[1px] px-6 py-2 transition border-sky-500 hover:bg-sky-500 ease-in duration-200 hover:text-white ${className}`
         }
         onClick={() => {
-          if (!isLoading) {
+          if (!isLoading && !disabled) {
             onClick();
           }
         }}

@@ -1,9 +1,18 @@
 import React from "react";
 
-const Input = ({ type, disabled, className }) => {
+const Input = ({ type, disabled, className, placeholder }) => {
   return (
     <>
-      <input style={{ borderRadius: "10px", border: "2px solid black"}} type={type} />
+      <input
+        type={type}
+        placeholder={placeholder}
+        className={
+          disabled
+            ? `cursor-not-allowed disabled border-[1px solid gray] border-2 rounded-3xl px-6 py-3`
+            : `border-[1px solid gray] border-2 rounded-3xl px-6 py-3 ${className}`
+        }
+        disabled={disabled}
+      />
     </>
   );
 };

@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { MyContext } from "./Context/Contexts";
 import react, { useState, useEffect } from "react";
 import { Pencil } from "./utils/icons";
+import Telinput from "./components/Input/telInput.jsx";
 import Input from "./components/Input/Input";
 
 function App() {
@@ -24,9 +25,10 @@ function App() {
           setIsModalOpen(true);
         }}
         isLoading={false}
-        icon={Pencil}
       />
-      <Input type="text" className="border-r-2 border-black" />
+      <Telinput />
+      <Input type="text" placeholder="Hello" disabled={false} />
+
       <Accordion data={FakeData} />
       <BasicModal
         open={isModalOpen}
